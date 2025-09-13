@@ -9,7 +9,8 @@
       "Bash(npm run quality:*)",
       "Bash(npm run lint:*)",
       "Bash(npx eslint:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
