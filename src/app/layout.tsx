@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
-import AppLayout from '@/app/components/AppLayout';
-import { baseMetadata } from '@/app/seo/metadata';
+import AppLayout from '@/components/AppLayout';
+import { baseMetadata } from '@/seo/metadata';
 import './globals.css';
 
 export const metadata = baseMetadata;

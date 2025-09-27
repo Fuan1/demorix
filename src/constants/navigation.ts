@@ -1,4 +1,4 @@
-import type { NavigationCategory } from '@/app/types/navigation';
+import type { NavigationCategory } from '@/types/navigation';
 
 export const navigationCategories: NavigationCategory[] = [
   {
@@ -8,7 +8,7 @@ export const navigationCategories: NavigationCategory[] = [
       {
         id: 'lexorank',
         title: 'LexoRank',
-        path: '/lexorank',
+        path: 'lexorank',
         description: 'Drag & drop ordering',
       },
     ],
@@ -20,7 +20,7 @@ export const navigationCategories: NavigationCategory[] = [
       {
         id: 'horizontal-scroll',
         title: 'Horizontal Scroll',
-        path: '/horizontal-scroll',
+        path: 'horizontal-scroll',
         description: 'Custom scroll implementations',
       },
     ],

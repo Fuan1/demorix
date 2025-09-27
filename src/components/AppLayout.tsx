@@ -2,8 +2,8 @@
 
 import { ReactNode } from 'react';
 
-import Sidebar from '@/app/components/Sidebar';
-import { navigationCategories } from '@/app/constants/navigation';
+import Sidebar from '@/components/Sidebar';
+import { navigationCategories } from '@/constants/navigation';
 
 type AppLayoutProps = {
   children: ReactNode;
