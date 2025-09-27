@@ -1,6 +1,5 @@
 'use client';
 
-import styled from '@emotion/styled';
 import { ReactNode } from 'react';
 
 import Sidebar from '@/app/components/Sidebar';
@@ -12,25 +11,13 @@ type AppLayoutProps = {
 
 const AppLayout = ({ children }: AppLayoutProps) => {
   return (
-    <LayoutContainer>
+    <div className="flex h-full overflow-hidden">
       <Sidebar categories={navigationCategories} />
-      <MainContent>{children}</MainContent>
-    </LayoutContainer>
+      <main className="ml-[280px] flex-1 p-6 overflow-y-auto h-screen">
+        {children}
+      </main>
+    </div>
   );
 };
 
 export default AppLayout;
-
-const LayoutContainer = styled.div`
-  display: flex;
-  height: 100vh;
-  overflow: hidden;
-`;
-
-const MainContent = styled.main`
-  margin-left: 280px;
-  flex: 1;
-  padding: 24px;
-  overflow-y: auto;
-  height: 100vh;
-`;

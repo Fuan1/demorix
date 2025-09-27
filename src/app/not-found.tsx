@@ -1,22 +1,24 @@
 'use client';
 
-import styled from '@emotion/styled';
-
-import { Button, Text, theme } from '@/app/design-system';
+import { Button } from '@/app/components/ui/button';
 
 type NotFoundPageProps = Record<string, never>;
 
 const NotFoundPage = ({}: NotFoundPageProps) => {
   return (
-    <Container>
-      <Content>
-        <ErrorCode>404</ErrorCode>
-        <Text variant="h2">Page Not Found</Text>
-        <Text color="secondary">
+    <div className="flex items-center justify-center min-h-[60vh] p-12">
+      <div className="text-center max-w-md flex flex-col gap-6">
+        <h1 className="text-9xl font-extrabold text-muted m-0 leading-none">
+          404
+        </h1>
+        <h2 className="text-2xl font-semibold text-foreground">
+          Page Not Found
+        </h2>
+        <p className="text-muted-foreground">
           The page you&apos;re looking for doesn&apos;t exist in our interactive
           demo collection.
-        </Text>
-        <ActionButtons>
+        </p>
+        <div className="flex gap-4 justify-center flex-wrap">
           <Button onClick={() => (window.location.href = '/')}>
             Back to Demorix
           </Button>
@@ -26,41 +28,10 @@ const NotFoundPage = ({}: NotFoundPageProps) => {
           >
             Explore LexoRank Demo
           </Button>
-        </ActionButtons>
-      </Content>
-    </Container>
+        </div>
+      </div>
+    </div>
   );
 };
 
 export default NotFoundPage;
-
-const Container = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 60vh;
-  padding: ${theme.spacing['2xl']} ${theme.spacing.lg};
-`;
-
-const Content = styled.div`
-  text-align: center;
-  max-width: 480px;
-  display: flex;
-  flex-direction: column;
-  gap: ${theme.spacing.lg};
-`;
-
-const ErrorCode = styled.h1`
-  font-size: 120px;
-  font-weight: ${theme.fontWeight.extrabold};
-  color: ${theme.colors.background.tertiary};
-  margin: 0;
-  line-height: 1;
-`;
-
-const ActionButtons = styled.div`
-  display: flex;
-  gap: ${theme.spacing.md};
-  justify-content: center;
-  flex-wrap: wrap;
-`;

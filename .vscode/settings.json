@@ -9,7 +9,8 @@
     ".claude": true,
     ".next": true,
     "tsconfig.tsbuildinfo": true,
-    "eslint.config.mjs": true
+    "eslint.config.mjs": true,
+    "components.json": true
   },
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
@@ -25,7 +26,7 @@
     }
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode", 
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": "explicit",
       "source.organizeImports": "explicit"

@@ -1,8 +1,8 @@
 import { ReactNode } from 'react';
 
 import AppLayout from '@/app/components/AppLayout';
-import EmotionProvider from '@/app/components/providers/EmotionProvider';
 import { baseMetadata } from '@/app/seo/metadata';
+import './globals.css';
 
 export const metadata = baseMetadata;
 
@@ -14,9 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body style={{ margin: 0, padding: 0, overflow: 'hidden' }}>
-        <EmotionProvider>
-          <AppLayout>{children}</AppLayout>
-        </EmotionProvider>
+        <AppLayout>{children}</AppLayout>
       </body>
     </html>
   );
