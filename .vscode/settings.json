@@ -10,7 +10,10 @@
     ".next": true,
     "tsconfig.tsbuildinfo": true,
     "eslint.config.mjs": true,
-    "components.json": true
+    "components.json": true,
+    "src/app/not-found.tsx": true,
+    "src/app/global-error.tsx": true,
+    "postcss.config.mjs": true
   },
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
