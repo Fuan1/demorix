@@ -14,7 +14,13 @@
       "Bash(npx:*)",
       "Bash(npm uninstall:*)",
       "WebSearch",
-      "Bash(npm run dev:*)"
+      "Bash(npm run dev:*)",
+      "mcp__ide__getDiagnostics",
+      "WebFetch(domain:confluence.atlassian.com)",
+      "WebFetch(domain:medium.com)",
+      "WebFetch(domain:tmcalm.nl)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:techblog.lycorp.co.jp)"
     ],
     "deny": [],
     "ask": []

@@ -17,6 +17,9 @@ This is a Next.js 15 application using the App Router architecture with React 19
 - **TypeScript**: Strict TypeScript configuration with path aliases (`@/*` maps to `./src/*`)
 - **Turbopack**: Enabled for both development and build processes
 - **ESLint**: Uses Next.js recommended ESLint config with TypeScript support
+- **Tailwind CSS v4**: For styling with CSS variables and design system
+- **shadcn/ui**: Component library with Radix UI primitives and CVA for variants
+- **Design System**: Uses CSS custom properties for theming with light/dark mode support
 
 The application follows Next.js App Router conventions where each route is defined by folders containing `page.tsx` files, with `layout.tsx` providing shared UI structure.
 
@@ -65,7 +68,7 @@ Each example should be self-contained with interactive demos, clear visual feedb
 
 - **TypeScript** `strict`. `any` 금지(불가피 시 좁혀 쓰고 사유 1줄).
 - **React (FC + Hooks)**: 함수형만.
-- **Styling**: `@emotion/styled` 사용. **SSR 설정 필수** (`EmotionProvider`). CSS-in-JS로 컴포넌트 기반 스타일링. 인라인 스타일은 1회성만. **비표준 props는 `$` prefix 필수** (예: `$isActive`). **외부 컴포넌트 래핑시 `shouldForwardProp` 사용**.
+- **Styling**: **Tailwind CSS v4** 사용. CSS 변수 기반 디자인 시스템 활용. shadcn/ui 컴포넌트와 `cn()` 유틸리티로 클래스 조합. 커스텀 스타일은 Tailwind 클래스 우선, 필요시에만 CSS 변수 활용.
 - **Next.js**: 불필요한 SSR 지양, 표준 에러/404 경로 우선.
 - **a11y**: 클릭 가능한 요소는 `button`/`a`; 키보드 포커스·aria 준수.
 
